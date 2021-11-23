@@ -4,5 +4,5 @@ A repo containing my dotfiles such as .vimrc, .bashrc, etc. also contains some c
 
 ## Roadmap
 1. folder per thing (git, vim, bash)
-2. .etcrc in each folder, as well as a commonly-named script in each folder to exec
-3. central script to run all common scripts
+2. list all files in each dir, make backups if they exist, copy into home dir
+3. add something for apt packages too

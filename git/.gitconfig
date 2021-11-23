@@ -1,0 +1,12 @@
+[user]
+	name = hexaflexahexagon
+	email = hexaflexahexagon@users.noreply.github.com
+[pull]
+	rebase = false
+[init]
+	defaultBranch = master
+[core]
+	editor = vim
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential

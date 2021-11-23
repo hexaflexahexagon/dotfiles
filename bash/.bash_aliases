@@ -1,17 +1,16 @@
-#general
-alias ll='ls -lah'
+alias ll="ls -lah"
+alias vi="vim"
 
-#git
-alias gap='git add -p'
-alias gad='git add .'
-alias gis='git status'
-alias gid='git diff'
+alias gad="git add ."
+alias gap="git add -p"
 
-#python
-alias py='python'
-alias py3='python3'
+alias gip="git push"
+alias gis="git status"
+alias gic="git commit"
+alias gid="git diff"
 
-alias python='python3'
+alias py="python"
+alias py3="python3"
+alias python="python3"
 
-#mmod neofetch
-alias mommyfetch='neofetch --ascii ~/.config/neofetch/mmod_ascii.txt --ascii_colors 0 7 6'
+alias :wq="echo fool"

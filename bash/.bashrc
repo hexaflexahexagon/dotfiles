@@ -112,10 +112,11 @@ if ! shopt -oq posix; then
   fi
 fi
 
-#needed for X server things in WSLv2
-
-export DISPLAY=$(awk '/nameserver / {print $2; exit}' /etc/resolv.conf 2>/dev/null):0
-export LIBGL_ALWAYS_INDIRECT=1
+#needed for X server things in WSLv2, only run on home desktop
+if [[ $(hostname) == "DESKTOP-2VNO1KR" ]]
+	export DISPLAY=$(awk '/nameserver / {print $2; exit}' /etc/resolv.conf 2>/dev/null):0
+	export LIBGL_ALWAYS_INDIRECT=1
+fi
 
 # Install Ruby Gems to ~/gems
 export GEM_HOME="$HOME/gems"

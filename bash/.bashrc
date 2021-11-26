@@ -113,7 +113,7 @@ if ! shopt -oq posix; then
 fi
 
 #needed for X server things in WSLv2, only run on home desktop
-if [[ $(hostname) == "DESKTOP-2VNO1KR" ]]
+if [[ $(hostname) == "DESKTOP-2VNO1KR" ]]; then
 	export DISPLAY=$(awk '/nameserver / {print $2; exit}' /etc/resolv.conf 2>/dev/null):0
 	export LIBGL_ALWAYS_INDIRECT=1
 fi

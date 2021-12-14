@@ -21,12 +21,8 @@ conflict () {
 				break
 				;;
 			"show file diff")
-				if [[ $( diff "$src" "$home" ) = "" ]]; then
-					echo "No difference found in the file content"
-				else 
-					echo "$src and $home diff:"
-					diff "$src" "$home"
-				fi
+				echo "$src and $home diff:"
+				diff "$src" "$home"
 				;;
 			"overwrite and copy")
 				# do nothing, just overwrite the file
@@ -48,7 +44,12 @@ for file in $(find . -mindepth 1 -maxdepth 2 -type f); do
 		
 		if [[ -a $home ]]; then
 			# it exists already
-			conflict
+			if [[ $( diff "$src" "$dst" ) == "" ]]; then
+				# ... but they are the same, don't prompt
+				true
+			else
+				conflict
+			fi
 		fi
 	
 		cp "$src" "$home"

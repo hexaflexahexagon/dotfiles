@@ -12,7 +12,7 @@ conflict () {
 	printf "\n"
 	echo "File \"$file\" already exists!" 
 	PS3="Enter a number: "
-	select choice in "create file backup" "show diff" "overwrite" "abort script"
+	select choice in "create file backup" "show diff" "overwrite" "skip"
 	do		
 		printf "\n"
 		case $choice in 
@@ -32,9 +32,10 @@ conflict () {
 				# do nothing, just overwrite the file
 				break
 				;;
-			"abort script")
-				echo "Exiting script..."	
-				exit
+			"skip")
+				echo "Skipping \"$home\""	
+				copy="false"
+				break
 				;;
 			*) echo "Invalid reply: \"$REPLY\"";;
 		esac
@@ -45,7 +46,8 @@ for file in $(find . -mindepth 1 -maxdepth 2 -type f); do
 	if [[ $(echo "$file" | grep -E $names) ]]; then
 		src="$file"	
 		home="$dst""$(echo "$file" | cut -d / -f3)"
-		
+		copy="true"
+
 		if [[ -a $home ]]; then
 			# it exists already
 			if [[ $( diff "$src" "$dst" ) == "" ]]; then
@@ -56,8 +58,10 @@ for file in $(find . -mindepth 1 -maxdepth 2 -type f); do
 			fi
 		fi
 	
-		cp "$src" "$home"
-		echo "File \"$file\" updated"
+		if [[ $copy == "true" ]]; then
+			cp "$src" "$home"
+			echo "File \"$file\" updated"
+		fi
 	fi
 done
 

@@ -12,27 +12,29 @@ conflict () {
 	printf "\n"
 	echo "File \"$file\" already exists!" 
 	PS3="Enter a number: "
-	select choice in "create file backup" "show diff" "overwrite" "skip"
-	do		
+	options=("create file backup" "show diff" "overwrite" "skip")
+	select choice in "${options[@]}"
+	do	
 		printf "\n"
 		case $choice in 
-			"create file backup")
+			"${options[0]}")
 				# create backup
 				cp "$home" "$home"-backup-"$(date +%m-%d-%y_%H-%M-%S)"
 				echo "Backup of \"$home\" created"
 				break
 				;;
-			"show diff")
+			"${options[1]}")
 				echo "< $src and > $home diff:"
 				printf "\n"
 				diff "$src" "$home"
 				printf "\n"
 				;;
-			"overwrite")
+			"${options[2]}")
 				# do nothing, just overwrite the file
+				copy="true"
 				break
 				;;
-			"skip")
+			"${options[3]}")
 				echo "Skipping \"$home\""	
 				copy="false"
 				break
@@ -42,16 +44,16 @@ conflict () {
 	done
 }
 
-while IFS= read -r -d '' file
+while IFS= read -u3 -r -d '' file
 do
 	if echo "$file" | grep -Eq $names; then
 		src="$file"	
 		home="$dst""$(echo "$file" | cut -d / -f3)"
-		copy="true"
+		copy="false"
 
 		if [[ -a $home ]]; then
 			# it exists already
-			if [[ $( diff "$src" "$dst" ) == "" ]]; then
+			if [[ $( diff "$src" "$home" ) == "" ]]; then
 				# ... but they are the same, don't prompt
 				true
 			else
@@ -62,6 +64,8 @@ do
 		if [[ $copy == "true" ]]; then
 			cp "$src" "$home"
 			echo "File \"$file\" updated"
+		else
+			echo "File \"$file\" already up-to-date"
 		fi
 	fi
-done < <(find . -mindepth 1 -maxdepth 2 -type f -print0)
+done 3< <(find . -mindepth 1 -maxdepth 2 -type f -print0)

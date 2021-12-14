@@ -6,7 +6,7 @@
 # words to filter by when looking for what to copy
 names='vimrc|bashrc|bash_aliases|gitconfig'
 
-dst="/home/hex/"
+dst="/home/$USER/"
 
 conflict () {
 	echo "File \"$file\" already exists!" 

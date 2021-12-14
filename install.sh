@@ -51,7 +51,7 @@ for file in $(find . -mindepth 1 -maxdepth 2 -type f); do
 			conflict
 		fi
 	
-		cp $src $home
+		cp "$src" "$home"
 		echo "File \"$file\" updated"
 	fi
 done

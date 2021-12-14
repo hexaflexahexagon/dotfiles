@@ -42,8 +42,9 @@ conflict () {
 	done
 }
 
-for file in $(find . -mindepth 1 -maxdepth 2 -type f); do
-	if [[ $(echo "$file" | grep -E $names) ]]; then
+while IFS= read -r -d '' file
+do
+	if echo "$file" | grep -Eq $names; then
 		src="$file"	
 		home="$dst""$(echo "$file" | cut -d / -f3)"
 		copy="true"
@@ -63,5 +64,4 @@ for file in $(find . -mindepth 1 -maxdepth 2 -type f); do
 			echo "File \"$file\" updated"
 		fi
 	fi
-done
-
+done < <(find . -mindepth 1 -maxdepth 2 -type f -print0)

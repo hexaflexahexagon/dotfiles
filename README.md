@@ -1,14 +1,19 @@
 # dotfiles
+A repo containing my dotfiles such as .vimrc, .bashrc, etc. It also contains a list of packages that I may want to install on any new computer setup.
 
-A repo containing my dotfiles such as .vimrc, .bashrc, etc. also contains some common scripts I may use frequently, as well as lists of packages that I may want to install on any new computer.
+## Dotfile Structure
+For configuration files, there are subdirectories for organization (git, vim, bash, etc). To add a new category of file, create the subdirectory and then update $names in `install.sh` with the file names to install. All files are copied directly into the current $USER 's home directory.
 
-## Roadmap
-1. folder per thing (git, vim, bash)
-2. list all files in each dir, make backups if they exist, copy into home dir
-3. add something for apt packages too
+## Packages
+All packages are listed in the `packages.sh` script for organization. To attempt to install all, use the following:
+
+```
+sudo apt update && sudo apt upgrade
+sudo apt install -y $( ./packages )
+``` 
 
 ## Todo list
-1. prettify install.sh
-2. skip things that have no diff
-3. give option to skip 1 file
-4. add ability to pass overrides in (with special care because that's dangerous)
+1. prettify `install.sh` output
+2. give an option to skip 1 file when prompted
+3. (maybe) add ability to pass overrides in, e.g. "copy everyting"
+

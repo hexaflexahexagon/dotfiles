@@ -1,4 +1,5 @@
 alias ll="ls -lah"
+alias lt="ls -laht"
 alias vi="vim"
 
 alias gad="git add ."

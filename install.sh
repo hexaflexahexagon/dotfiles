@@ -9,30 +9,34 @@ names='vimrc|bashrc|bash_aliases|gitconfig'
 dst="/home/$USER/"
 
 conflict () {
+	printf "\n"
 	echo "File \"$file\" already exists!" 
 	PS3="Enter a number: "
-	select choice in "backup existing file" "show file diff" "overwrite and copy" "abort script"
-	do
+	select choice in "create file backup" "show diff" "overwrite" "abort script"
+	do		
+		printf "\n"
 		case $choice in 
-			"backup existing file")
+			"create file backup")
 				# create backup
 				cp "$home" "$home"-backup-"$(date +%m-%d-%y_%H-%M-%S)"
-				echo "Backup created successfully"
+				echo "Backup of \"$home\" created"
 				break
 				;;
-			"show file diff")
-				echo "$src and $home diff:"
+			"show diff")
+				echo "< $src and > $home diff:"
+				printf "\n"
 				diff "$src" "$home"
+				printf "\n"
 				;;
-			"overwrite and copy")
+			"overwrite")
 				# do nothing, just overwrite the file
 				break
 				;;
 			"abort script")
-				echo "Exiting program..."	
+				echo "Exiting script..."	
 				exit
 				;;
-			*) echo "Invalid reply \"$REPLY\"";;
+			*) echo "Invalid reply: \"$REPLY\"";;
 		esac
 	done
 }

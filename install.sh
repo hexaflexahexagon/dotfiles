@@ -24,18 +24,20 @@ conflict () {
 				break
 				;;
 			"${options[1]}")
+				# show diff
 				echo "< $src and > $home diff:"
 				printf "\n"
 				diff "$src" "$home"
 				printf "\n"
 				;;
 			"${options[2]}")
-				# do nothing, just overwrite the file
+				# copy and overwrite the file
 				copy="true"
 				skip="false"
 				break
 				;;
 			"${options[3]}")
+				# skip the file
 				echo "Skipping \"$home\""	
 				copy="false"
 				skip="true"

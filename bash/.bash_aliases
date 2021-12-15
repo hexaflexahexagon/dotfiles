@@ -16,3 +16,5 @@ alias python="python3"
 
 alias cls="clear"
 alias :wq="echo fool"
+
+alias bashrc="source ~/.bashrc"

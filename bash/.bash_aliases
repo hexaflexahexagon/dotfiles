@@ -10,6 +10,9 @@ alias gis="git status"
 alias gic="git commit"
 alias gid="git diff"
 
+alias glog="git log --pretty=format:'%C(auto)%H Author: %an%n    %s%n%b'"
+alias glogl="git log --pretty=format:'%C(auto)commit %H%nAuthor: %an%nDate: %ad%n    %s%n%b%n '"
+
 alias py="python"
 alias py3="python3"
 alias python="python3"

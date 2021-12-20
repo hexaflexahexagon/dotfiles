@@ -20,6 +20,7 @@ alias py3="python3"
 alias python="python3"
 
 alias cls="clear"
-alias :wq="echo fool"
+alias :q="echo fool"
+alias :wq=":q"
 
 alias bashrc="source ~/.bashrc"

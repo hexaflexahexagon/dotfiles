@@ -15,6 +15,8 @@ alias glog="git log --pretty=format:'%C(auto)%H Author: %an%n    %s%n%b'"
 alias glogl="git log --pretty=format:'%C(auto)commit %H%nAuthor: %an%nDate: %ad%n    %s%n%b%n '"
 alias gpat="git format-patch -1"
 
+alias gistlist="gh gist list -L 9999"
+
 alias py="python"
 alias py3="python3"
 alias python="python3"

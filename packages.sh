@@ -15,6 +15,7 @@ echo "python3"
 echo "less"
 echo "man"
 echo "screen"
+echo "file"
 
 # networking
 echo "netutils" 

@@ -24,19 +24,23 @@ conflict () {
 				break
 				;;
 			"${options[1]}")
+				# show diff
 				echo "< $src and > $home diff:"
 				printf "\n"
 				diff "$src" "$home"
 				printf "\n"
 				;;
 			"${options[2]}")
-				# do nothing, just overwrite the file
+				# copy and overwrite the file
 				copy="true"
+				skip="false"
 				break
 				;;
 			"${options[3]}")
+				# skip the file
 				echo "Skipping \"$home\""	
 				copy="false"
+				skip="true"
 				break
 				;;
 			*) echo "Invalid reply: \"$REPLY\"";;
@@ -50,6 +54,7 @@ do
 		src="$file"	
 		home="$dst""$(echo "$file" | cut -d / -f3)"
 		copy="false"
+		skip="false"
 
 		if [[ -a $home ]]; then
 			# it exists already
@@ -64,6 +69,8 @@ do
 		if [[ $copy == "true" ]]; then
 			cp "$src" "$home"
 			echo "File \"$file\" updated"
+		elif [[ $skip == "true" ]]; then
+			true # say nothing
 		else
 			echo "File \"$file\" already up-to-date"
 		fi

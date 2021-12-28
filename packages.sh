@@ -3,7 +3,7 @@
 # Curated list of debian-based package names 
 
 # Usage: 
-# sudo apt update && sudo apt -y upgrade && sudo apt install -y $( ./packages )
+# sudo apt update && sudo apt -y upgrade && sudo apt install -y $( ./packages.sh )
 
 # programs
 echo "git"
@@ -18,7 +18,8 @@ echo "less"
 echo "man"
 echo "screen"
 echo "file"
-echo "gh"		# I use this sometimes but it's not in default package repos, see: https://github.com/cli/cli/blob/trunk/docs/install_linux.md
+#echo "gh"		# I use this sometimes but it's not in default package repos, see: https://github.com/cli/cli/blob/trunk/docs/install_linux.md
+echo "binutils" # strings
 
 # networking
 echo "netutils" 

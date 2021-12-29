@@ -25,7 +25,6 @@ echo "binutils" # strings
 echo "pngcheck"
 
 # networking
-echo "netutils" 
 echo "dnsutils" # for dig, nslookup
 echo "traceroute"
 echo "net-tools" # netstat, route, arp

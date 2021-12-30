@@ -72,7 +72,7 @@ if ! shopt -oq posix; then
 fi
 
 # only run in WSL environment
-if [[ $(grep Microsoft /proc/version) ]]; then
+if [[ $(grep -i Microsoft /proc/version) ]]; then
 	true # no-op
 fi
 

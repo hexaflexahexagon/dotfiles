@@ -28,6 +28,6 @@ alias :wq=":q"
 alias bashrc="source ~/.bashrc"
 
 # If running under WSL
-if [[ $(grep Microsoft /proc/version) ]]; then
+if [[ $(grep -i Microsoft /proc/version) ]]; then
 	alias exp="explorer.exe ."
 fi

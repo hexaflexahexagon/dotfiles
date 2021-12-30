@@ -8,6 +8,7 @@ A repo containing my dotfiles such as .vimrc, .bashrc, etc. It also contains a l
 - `;` remaps to `:`
 
 ### Bash
+- various `show*` commands that display various system properties
 - `git` aliases like `gic, gis, gad, gip, gap` for basic operations
 - `git log` aliases like `glog` and `glogl` for prettier formatting
 - `gpat` to create a formatted git patch 

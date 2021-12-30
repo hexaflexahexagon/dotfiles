@@ -55,6 +55,15 @@ endif " has("autocmd")
 " keybinds / behavior
 """"""""""""""""""""
 
+" <F5> = execute current file
+" :F5 a b c = execute current file with args
+nnoremap <F5> :!"%:p"<Enter>
+command! -nargs=* F5 :!"%:p" <args>
+
+" ; = :
+nnoremap ; :
+vnoremap ; :
+
 " space = search, ctrl+space = r-search
 map <space> /
 map <C-space> ?

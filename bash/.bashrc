@@ -71,6 +71,11 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# only run in WSL environment
+if [[ $(grep Microsoft /proc/version) ]]; then
+	true # no-op
+fi
+
 # things local to my desktop
 if [[ $(hostname) == "DESKTOP-2VNO1KR" ]]; then
 	#needed for X server things in WSLv2

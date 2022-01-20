@@ -53,7 +53,7 @@ do
 	if echo "$file" | grep -Eq $names; then
 		src="$file"	
 		home="$dst""$(echo "$file" | cut -d / -f3)"
-		copy="false"
+		copy="true"
 		skip="false"
 
 		if [[ -a $home ]]; then

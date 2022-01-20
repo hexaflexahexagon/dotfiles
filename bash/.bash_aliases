@@ -35,6 +35,7 @@ alias :q="echo fool"
 alias :wq=":q"
 
 alias bashrc="source ~/.bashrc"
+alias bashal="source ~/.bash_aliases"
 
 # If running under WSL
 if [[ $(grep -i Microsoft /proc/version) ]]; then

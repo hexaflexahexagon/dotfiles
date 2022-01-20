@@ -13,7 +13,7 @@ A repo containing my dotfiles such as .vimrc, .bashrc, etc. It also contains a l
 - `git log` aliases like `glog` and `glogl` for prettier formatting
 - `gpat` to create a formatted git patch 
 - `gistlist` to list all github gists quickly
-- `bashrc` to hot reload the `.bashrc` file
+- `bashrc` and `bashal` to hot reload the `.bashrc` or `.bash_aliases` files respectively
 - `exp` windows WSL file explorer shortcut  
 - very big `.bash_history` file
 

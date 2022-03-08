@@ -13,9 +13,10 @@ shopt -s histappend
 # update .bash_history in real time, not on shell close
 export PROMPT_COMMAND='history -a'
 
-# big history file
+# big history file, add timestamps
 HISTSIZE=10000
 HISTFILESIZE=10000
+export HISTTIMEFORMAT="%F %I:%M:%S %p "
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.

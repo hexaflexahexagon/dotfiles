@@ -13,13 +13,19 @@ echo "grep"
 echo "vim"
 echo "shellcheck"
 echo "hexedit"
-echo "python3"
-echo "python3-pip"
-echo "python3-venv"
 echo "less"
 echo "man"
 echo "screen"
 #echo "gh"		# I use this sometimes but it's not in default package repos, see: https://github.com/cli/cli/blob/trunk/docs/install_linux.md
+
+# python stuff
+echo "python3"
+echo "python3-pip"
+echo "python3-venv"
+echo "build-essential" 
+echo "libssl-dev" 
+echo "libffi-dev" 
+echo "python3-dev"
 
 # forensics
 echo "file"

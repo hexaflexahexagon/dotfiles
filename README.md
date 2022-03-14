@@ -30,3 +30,10 @@ All packages are listed in the `packages.sh` script for organization. To attempt
 sudo apt update && sudo apt upgrade
 sudo apt install -y $( ./packages )
 ``` 
+
+## Scripts
+A list of scripts I often use is included in the `scripts.sh` file for ease of installation.
+
+```
+wget --directory-prefix "scripts/" --backups 0 -N $( ./scripts.sh )
+```

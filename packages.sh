@@ -17,7 +17,8 @@ echo "less"
 echo "man"
 echo "screen"
 echo "dos2unix"
-#echo "gh"		# I use this sometimes but it's not in default package repos, see: https://github.com/cli/cli/blob/trunk/docs/install_linux.md
+#echo "gh"		# I use this but it's not in default package repos
+				# see: https://github.com/cli/cli/blob/trunk/docs/install_linux.md
 
 # python stuff
 echo "python3"

@@ -76,9 +76,10 @@ vnoremap <Left> <Nop>
 vnoremap <Right> <Nop>
 vnoremap <Up> <Nop>
 
-" ; = :
-nnoremap ; :
-vnoremap ; :
+" ; = : this is disabled because it makes using f/t/F/T searching annoying
+
+"nnoremap ; :
+"vnoremap ; :
 
 " space = search, ctrl+space = r-search
 map <space> /

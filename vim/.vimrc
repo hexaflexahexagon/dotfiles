@@ -85,6 +85,9 @@ vnoremap <Up> <Nop>
 map <space> /
 map <C-space> ?
 
+" clear search highlighting automatically
+autocmd InsertEnter * :let @/=""
+
 """"""""""""""""""""
 " misc options
 """"""""""""""""""""

@@ -40,3 +40,4 @@ echo "traceroute"
 echo "net-tools" # netstat, route, arp
 echo "netcat" 
 echo "tcpdump"
+echo "mtr-tiny"

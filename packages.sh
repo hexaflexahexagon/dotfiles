@@ -6,6 +6,7 @@
 # sudo apt update && sudo apt -y upgrade && sudo apt install -y $( ./packages.sh )
 
 # programs
+echo "unattended-upgrades" # automated security updates
 echo "git"
 echo "curl"
 echo "ffmpeg"
@@ -41,3 +42,5 @@ echo "net-tools" # netstat, route, arp
 echo "netcat" 
 echo "tcpdump"
 echo "mtr-tiny"
+echo "nmap"
+

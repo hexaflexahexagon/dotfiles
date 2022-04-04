@@ -135,4 +135,7 @@ set incsearch
 set ttimeout            " time out for key codes
 set ttimeoutlen=100     " wait up to 100ms after Esc for special key
 
+" color
+set background=dark
+color desert
 

@@ -40,4 +40,5 @@ alias bashal="source ~/.bash_aliases"
 # If running under WSL
 if [[ $(grep -i Microsoft /proc/version) ]]; then
 	alias exp="explorer.exe ."
+	alias clip="tee >(/mnt/c/Windows/system32/clip.exe)" # example usage: `echo hi | clip`
 fi

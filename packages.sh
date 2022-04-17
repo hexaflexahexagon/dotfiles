@@ -20,6 +20,7 @@ echo "less"
 echo "man"
 echo "screen"
 echo "dos2unix"
+echo "bc"		# cli calculator
 #echo "gh"		# I use this but it's not in default package repos
 				# see: https://github.com/cli/cli/blob/trunk/docs/install_linux.md
 

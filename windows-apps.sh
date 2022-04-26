@@ -6,23 +6,23 @@
 # Helpful: https://ninite.com/
 
 # Standard
-echo 'Google Chrome'	# 
-echo '7-zip'			#
-echo 'WSL'				# 
-echo 'Firefox'			#
-echo 'Notepad++'		#
-echo 'VLC player'		#
-echo 'MS Office Suite'	#
-echo 'GIMP'				#
-echo 'KeePass 2'		#
+echo 'Google Chrome'	# https://www.google.com/intl/en_us/chrome/
+echo '7-zip'			# https://www.7-zip.org/download.html 
+echo 'WSL'				# https://docs.microsoft.com/en-us/windows/wsl/install
+echo 'Firefox'			# https://www.mozilla.org/en-US/firefox/new/
+echo 'Notepad++'		# https://notepad-plus-plus.org/downloads/
+echo 'VLC player'		# https://www.videolan.org/vlc/download-windows.html
+echo 'MS Office Suite'	# 
+echo 'GIMP'				# https://www.gimp.org/downloads/
+echo 'KeePass 2'		# https://keepass.info/download.html
 
 # Work
-echo 'Wireshark'		#
-echo 'PuTTY'			#
-echo 'SuperPuTTY'		#
-echo 'WindowsTerminal'	#
-echo 'WinSCP'			#
-echo 'RDP Manager'		#
+echo 'Wireshark'		# https://www.wireshark.org/download.html
+echo 'PuTTY'			# https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
+echo 'SuperPuTTY'		# https://www.puttygen.com/superputty
+echo 'WindowsTerminal'	# https://docs.microsoft.com/en-us/windows/terminal/install
+echo 'WinSCP'			# https://winscp.net/eng/download.php
+echo 'RDP Manager'		# https://devolutions.net/remote-desktop-manager/home/download
 
 # Personal
 echo 'Discord'			#

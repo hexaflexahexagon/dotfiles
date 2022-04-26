@@ -38,6 +38,10 @@ sudo apt update && sudo apt upgrade
 sudo apt install -y $( ./packages.sh )
 ``` 
 
+## Windows Program List
+
+A list of Windows programs I tend to install can be found in `windows-apps.sh`. This script just echo's a number of program names as there is no simple automated installation process. 
+
 ## Scripts
 
 A list of scripts I often use is included in the `scripts.sh` file for ease of installation.

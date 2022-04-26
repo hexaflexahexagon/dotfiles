@@ -13,7 +13,6 @@ echo 'Firefox'			# https://www.mozilla.org/en-US/firefox/new/
 echo 'Notepad++'		# https://notepad-plus-plus.org/downloads/
 echo 'VLC player'		# https://www.videolan.org/vlc/download-windows.html
 echo 'MS Office Suite'	# 
-echo 'GIMP'				# https://www.gimp.org/downloads/
 echo 'KeePass 2'		# https://keepass.info/download.html
 
 # Work
@@ -28,3 +27,5 @@ echo 'RDP Manager'		# https://devolutions.net/remote-desktop-manager/home/downlo
 echo 'Discord'			#
 echo 'Spotify'			#
 echo 'Steam'			#
+echo 'GIMP'				# https://www.gimp.org/downloads/
+

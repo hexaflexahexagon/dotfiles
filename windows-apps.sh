@@ -13,7 +13,7 @@ echo 'Firefox'			# https://www.mozilla.org/en-US/firefox/new/
 echo 'Notepad++'		# https://notepad-plus-plus.org/downloads/
 echo 'VLC player'		# https://www.videolan.org/vlc/download-windows.html
 echo 'MS Office Suite'	# 
-echo 'KeePass 2'		# https://keepass.info/download.html
+echo 'Bitwarden'		# https://bitwarden.com/download/
 
 # Work
 echo 'Wireshark'		# https://www.wireshark.org/download.html
@@ -21,7 +21,7 @@ echo 'PuTTY'			# https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
 echo 'SuperPuTTY'		# https://www.puttygen.com/superputty
 echo 'WindowsTerminal'	# https://docs.microsoft.com/en-us/windows/terminal/install
 echo 'WinSCP'			# https://winscp.net/eng/download.php
-echo 'RDP Manager'		# https://devolutions.net/remote-desktop-manager/home/download
+echo 'mRemoteNG'		# https://mremoteng.org/download
 
 # Personal
 echo 'Discord'			#

@@ -76,3 +76,4 @@ do
 		fi
 	fi
 done 3< <(find . -mindepth 1 -maxdepth 2 -type f -print0)
+

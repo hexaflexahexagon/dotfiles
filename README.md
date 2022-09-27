@@ -49,3 +49,4 @@ A list of scripts I often use is included in the `scripts.sh` file for ease of i
 ```
 wget --directory-prefix "scripts/" --backups 0 -N $( ./scripts.sh )
 ```
+

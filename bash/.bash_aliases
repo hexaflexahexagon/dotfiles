@@ -1,3 +1,4 @@
+alias rm='rm -i -v'
 alias mv='mv -i -v'
 alias cp='cp -i -v'
 alias ln='ln -i -v'

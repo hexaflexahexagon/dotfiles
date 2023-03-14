@@ -1,3 +1,7 @@
+alias mv='mv -i -v'
+alias cp='cp -i -v'
+alias ln='ln -i -v'
+
 alias ls="ls --color=auto"
 alias ll="ls -lah"
 alias lt="ls -laht"

@@ -23,3 +23,6 @@ echo 'https://gist.githubusercontent.com/hexaflexahexagon/421ed429cfc20a25cf1038
 # create github gist of a given file
 echo 'https://gist.githubusercontent.com/hexaflexahexagon/9899bf0d097ab6378540bc9b18a27b52/raw/cf95cca74403014ca1cf066015af9f17ddcbeafe/gist-create.sh'
 
+# create a set of folders in an array-like structure with automatic numbering
+echo 'https://gist.githubusercontent.com/hexaflexahexagon/e352196d0405b323d6b94c0a07497c74/raw/e97689c1ab15222f05820deafa350f92b5af80c0/make-folders.ps1'
+

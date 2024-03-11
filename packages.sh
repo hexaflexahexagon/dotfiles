@@ -42,7 +42,7 @@ echo "pngcheck"
 echo "dnsutils" # for dig, nslookup
 echo "traceroute"
 echo "net-tools" # netstat, route, arp
-echo "netcat" 
+echo "netcat-traditional" 
 echo "tcpdump"
 echo "mtr-tiny"
 echo "nmap"
